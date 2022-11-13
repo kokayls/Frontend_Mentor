@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 :root {
     --darkCyan: hsl(184, 100%, 22%);
     --brightOrange: hsl(31, 77%, 52%);
@@ -32,6 +32,7 @@ body{
 }
 
 .card{
+    height: 31.25rem;
     width:19.166rem;
     padding: 2.5rem;
 }
@@ -55,6 +56,7 @@ a{
     border-radius:1.875rem;
     border: solid white 2px;
     background: white;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
     cursor: pointer;
     transition: 0.7s ease;
@@ -83,3 +85,23 @@ a{
 #card-three{
     background-color: var(--veryDarkCyan);
 }
+
+@media only screen and (max-width: 768px){
+   
+    .card{
+        border-radius: 0.81rem;
+        height: 27rem;
+    }
+    .cards-container {
+        position: absolute;
+        top: 20px;
+        width: 42rem;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0.81rem;
+    }
+  
+    
+  }
