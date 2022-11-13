@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap');
+
 :root {
     --darkCyan: hsl(184, 100%, 22%);
     --brightOrange: hsl(31, 77%, 52%);
@@ -10,6 +12,74 @@
     margin: 0;
 }
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #262626;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    perspective: 1px;
+    width: 57.5rem;
+    height: 31.25rem;
+    color: white;
+    
+}
+
+.card{
+    width:19.166rem;
+    padding: 2.5rem;
+}
+.paragraph{
+    height: 12rem;
+}
+.card img{
+    margin-bottom: 2.5rem;
+}
+
+.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: .2rem;
+    padding-bottom: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+.card-button{
+    padding: 0.814rem 2rem;
+    border-radius:1.875rem;
+    border: solid white 2px;
+    background: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.card-button:hover{
+    color: white;
+    background: transparent;
+}
+.button-one{
+    color: var(--brightOrange);
+}
+.button-two{
+    color: var(--darkCyan);
+}
+.button-three{
+    color: var(--veryDarkCyan);
+}
+
+#card-one{
+    background-color: var(--brightOrange);
+}
+#card-two{
+    background-color: var(--darkCyan);
+}
+#card-three{
+    background-color: var(--veryDarkCyan);
 }
