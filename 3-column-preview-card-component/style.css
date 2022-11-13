@@ -1,0 +1,15 @@
+:root {
+    --darkCyan: hsl(184, 100%, 22%);
+    --brightOrange: hsl(31, 77%, 52%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: #262626;
+}
